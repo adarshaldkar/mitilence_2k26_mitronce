@@ -562,8 +562,8 @@ const Home = () => {
 
           <AnimatedSection>
             <div className="about-stats">
-              <StatCard icon="fas fa-users" target={1000} prefix="" suffix="+" label="Participants" />
-              <StatCard icon="fas fa-trophy" target={50} prefix="₹" suffix="K+" label="Prize Pool" />
+              <StatCard icon="fas fa-users" target={500} prefix="" suffix="+" label="Participants" />
+              <StatCard icon="fas fa-trophy" target="Exciting Gifts & Cash Prizes" prefix="" suffix="" label="Prize Pool" />
               <StatCard icon="fas fa-calendar-alt" target={10} prefix="" suffix="+" label="Events" />
               <StatCard icon="fas fa-university" target={50} prefix="" suffix="+" label="Colleges" />
             </div>

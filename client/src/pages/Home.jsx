@@ -106,7 +106,7 @@ const SCHEDULE = [
   { time: '1:00 PM', title: 'Lunch Break', desc: 'Networking lunch and refreshments for all participants.', icon: 'fas fa-chess-king' },
   { time: '2:00 PM', title: 'Sustainable Concept Pitch', desc: 'Pitch innovative sustainable ideas for environmental or societal impact.', icon: 'fas fa-chess-bishop' },
   { time: '2:30 PM', title: 'Code Clash in Embedded C', desc: 'Write efficient Embedded C programs to solve hardware-oriented challenges.', icon: 'fas fa-chess-knight' },
-  { time: '3:30 PM', title: 'Fun Zone', desc: 'Mini games — Chess Competition, Blind Nit, Push Up Challenge & Win the Doll!', icon: 'fas fa-chess-rook' },
+  { time: '3:30 PM', title: 'Fun Zone', desc: 'Mini games — Chess Competition, Blind Hit, Push Up Challenge & Win the Doll!', icon: 'fas fa-chess-rook' },
   { time: '4:30 PM', title: 'Valediction', desc: 'Prize distribution, closing ceremony, and vote of thanks.', icon: 'fas fa-chess-king' },
 ];
 
@@ -371,7 +371,6 @@ const EventCard = ({ event }) => {
           <ul className="event-card-details">
             <li><i className="fas fa-users" /> <strong>Team Size:</strong> {event.teamSize}</li>
             <li><i className="fas fa-gavel" /> <strong>Rules:</strong> {event.rules}</li>
-            <li><i className="fas fa-ticket-alt" /> <strong>Entry Fee:</strong> {event.fee}</li>
             <li><i className="fas fa-trophy" /> <strong>Prize:</strong> {event.prize}</li>
           </ul>
         </div>

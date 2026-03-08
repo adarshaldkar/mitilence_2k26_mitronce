@@ -15,7 +15,7 @@ const EVENTS = [
     desc: 'Present innovative ideas or research papers related to Electronics and Communication domains such as Communication Systems, Embedded Systems, VLSI, IoT, Signal Processing, Artificial Intelligence in Electronics, and Networking.',
     teamSize: 'Max 2 members',
     rules: '10 min total (8 min presentation + 2 min Q&A), PPT format, original work only, no plagiarism. Submit paper to mitilmitronce26@gmail.com before 12.03.2026.',
-    fee: '₹200 per team',
+    
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -26,7 +26,6 @@ const EVENTS = [
     desc: 'A technical networking challenge where participants must identify connections between technical terms, electronic components, technologies, or concepts. Test your lateral thinking and technical knowledge!',
     teamSize: 'Max 2 members',
     rules: '2 rounds (Qualification + Final). Identify connections between given clues or images. Questions related to electronics, technology, and logical connections. No electronic gadgets allowed.',
-    fee: '₹150 per team',
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -37,7 +36,7 @@ const EVENTS = [
     desc: 'A robotics event where participants design and operate a bot that navigates through a given track or arena. The objective is to complete the course in the shortest possible time while following the rules of the competition.',
     teamSize: 'Max 3 members',
     rules: '2 rounds. Teams must operate only one bot throughout. Shortest time wins. 5-second bonus time for stops/deviations. Any arena damage leads to disqualification.',
-    fee: '₹250 per team',
+    
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -48,7 +47,7 @@ const EVENTS = [
     desc: 'Participants should pitch innovative sustainable ideas or technological solutions that address environmental or societal problems. Present using PPT, prototype, or visual aids.',
     teamSize: 'Max 2 members',
     rules: '5 min pitch + 2 min Q&A. Concept must be original and practically feasible. Evaluated on innovation, feasibility, impact, and presentation skills.',
-    fee: '₹200 per team',
+    
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -59,7 +58,7 @@ const EVENTS = [
     desc: 'A logical and analytical challenge where participants solve puzzles, riddles, and problem-solving tasks. The competition consists of quiz and puzzle solving rounds conducted within a specified time limit.',
     teamSize: 'Individual',
     rules: 'Timed rounds. Scoring based on correct answers (negative marks may apply). No mobile phones, calculators, or electronic gadgets. Fastest and most accurate participant wins.',
-    fee: '₹100',
+    
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -70,7 +69,7 @@ const EVENTS = [
     desc: 'A debugging contest where participants must identify and fix errors in given code snippets. Programming languages may include C, Embedded C, Python, and Java.',
     teamSize: 'Max 2 members',
     rules: '2 rounds — Round 1: Error Identification, Round 2: Debugging. Time limit: 30 minutes. No external resources or internet. Team solving the most bugs correctly wins.',
-    fee: '₹150 per team',
+    
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -81,7 +80,7 @@ const EVENTS = [
     desc: 'A technical coding event where participants must write efficient Embedded C programs to solve given hardware-oriented tasks or problem statements related to embedded systems. Solutions must consider constraints like limited memory and processing capability.',
     teamSize: 'Max 2 members',
     rules: 'Only C language allowed. Evaluated on correctness, efficiency & optimization. No external tools, libraries, or internet. Judges\' decision is final.',
-    fee: '₹150 per team',
+    
     prize: '🏆 Exciting Prizes',
   },
   {
@@ -92,7 +91,6 @@ const EVENTS = [
     desc: 'Fun Zone includes a variety of entertaining mini games and interactive activities for all participants. Events include Chess Competition, Blind Nit, Push Up Challenge, and Win the Doll!',
     teamSize: 'Individual',
     rules: 'Each game has separate rules explained before start. Follow coordinator instructions. Misconduct leads to disqualification. Winners selected on performance & time.',
-    fee: 'Free',
     prize: '🎉 Fun Prizes',
   },
 ];

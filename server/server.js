@@ -26,7 +26,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:5173',
-      'https://your-app-name.vercel.app',  // replace with actual Vercel URL after deploy
+      'https://mitilence-2k26-mitronce.vercel.app',  // replace with actual Vercel URL after deploy
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],

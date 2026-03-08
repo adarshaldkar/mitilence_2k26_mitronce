@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Chess King piece in gold -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6C47A"/>
+      <stop offset="50%" style="stop-color:#C6A15B"/>
+      <stop offset="100%" style="stop-color:#A8893A"/>
+    </linearGradient>
+  </defs>
+  <!-- Cross on top -->
+  <rect x="29" y="4" width="6" height="14" rx="1.5" fill="url(#goldGrad)"/>
+  <rect x="24" y="7" width="16" height="6" rx="1.5" fill="url(#goldGrad)"/>
+  <!-- Head/crown -->
+  <circle cx="32" cy="22" r="6" fill="url(#goldGrad)"/>
+  <!-- Neck -->
+  <rect x="28" y="27" width="8" height="4" rx="1" fill="url(#goldGrad)"/>
+  <!-- Body - tapered -->
+  <path d="M22 31 L42 31 L46 52 L18 52 Z" fill="url(#goldGrad)" rx="2"/>
+  <!-- Body ring detail -->
+  <rect x="24" y="36" width="16" height="2" rx="1" fill="#0B0B0B" opacity="0.25"/>
+  <rect x="22" y="42" width="20" height="2" rx="1" fill="#0B0B0B" opacity="0.2"/>
+  <!-- Base -->
+  <rect x="15" y="52" width="34" height="4" rx="2" fill="url(#goldGrad)"/>
+  <rect x="13" y="55" width="38" height="5" rx="2.5" fill="url(#goldGrad)"/>
+</svg>

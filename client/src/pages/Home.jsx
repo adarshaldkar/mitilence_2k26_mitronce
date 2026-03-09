@@ -30,7 +30,7 @@ const EVENTS = [
   },
   {
     name: 'Bot Marathon',
-    category: 'signature',
+    category: 'technical',
     icon: 'fas fa-robot',
     short: 'Design and operate a bot to navigate through an arena in the shortest time.',
     desc: 'A robotics event where participants design and operate a bot that navigates through a given track or arena. The objective is to complete the course in the shortest possible time while following the rules of the competition.',
@@ -41,7 +41,7 @@ const EVENTS = [
   },
   {
     name: 'Sustainable Concept Pitch',
-    category: 'non-technical',
+    category: 'technical',
     icon: 'fas fa-leaf',
     short: 'Pitch innovative sustainable ideas addressing environmental or societal problems.',
     desc: 'Participants should pitch innovative sustainable ideas or technological solutions that address environmental or societal problems. Present using PPT, prototype, or visual aids.',
@@ -52,7 +52,7 @@ const EVENTS = [
   },
   {
     name: 'Mindbender',
-    category: 'non-technical',
+    category: 'technical',
     icon: 'fas fa-brain',
     short: 'Solve puzzles, riddles, and analytical problem-solving tasks.',
     desc: 'A logical and analytical challenge where participants solve puzzles, riddles, and problem-solving tasks. The competition consists of quiz and puzzle solving rounds conducted within a specified time limit.',
@@ -85,7 +85,7 @@ const EVENTS = [
   },
   {
     name: 'Fun Zone',
-    category: 'non-technical',
+    category: 'fun-zone',
     icon: 'fas fa-gamepad',
     short: 'Entertaining mini games — Chess Competition, Blind Nit, Push Up Challenge & Win the Doll!',
     desc: 'Fun Zone includes a variety of entertaining mini games and interactive activities for all participants. Events include Chess Competition, Blind Nit, Push Up Challenge, and Win the Doll!',
@@ -98,15 +98,15 @@ const EVENTS = [
 const SCHEDULE = [
   { time: '9:00 AM', title: 'Registration', desc: 'Check-in, kit distribution, and welcome refreshments.', icon: 'fas fa-chess-pawn' },
   { time: '9:30 AM', title: 'Inauguration', desc: 'Opening ceremony with chief guest address and lamp lighting.', icon: 'fas fa-chess-king' },
-  { time: '10:00 AM', title: 'Paper Presentation', desc: 'Research paper presentations on ECE domains — Communication, VLSI, IoT & AI.', icon: 'fas fa-chess-bishop' },
-  { time: '10:30 AM', title: 'Connectify', desc: 'Technical networking challenge — identify connections between components & concepts.', icon: 'fas fa-chess-knight' },
-  { time: '11:00 AM', title: 'Bot Marathon', desc: 'Robotics event — navigate your bot through the arena in the shortest time.', icon: 'fas fa-chess-rook' },
-  { time: '11:30 AM', title: 'Mindbender', desc: 'Solve puzzles, riddles, and analytical problem-solving challenges.', icon: 'fas fa-chess-queen' },
-  { time: '12:00 PM', title: 'Bug Busters', desc: 'Debugging contest — find and fix errors in code across multiple languages.', icon: 'fas fa-chess-pawn' },
+  { time: '11:00 AM – 12:30 PM', title: 'Paper Presentation', desc: 'Research paper presentations on ECE domains — Communication, VLSI, IoT & AI.', icon: 'fas fa-chess-bishop' },
+  { time: '2:00 PM – 3:30 PM', title: 'Connectify', desc: 'Technical networking challenge — identify connections between components & concepts.', icon: 'fas fa-chess-knight' },
+  { time: '12:00 PM – 2:30 PM', title: 'Bot Marathon', desc: 'Robotics event — navigate your bot through the arena in the shortest time.', icon: 'fas fa-chess-rook' },
+  { time: '2:00 PM – 3:00 PM', title: 'Mindbender', desc: 'Solve puzzles, riddles, and analytical problem-solving challenges.', icon: 'fas fa-chess-queen' },
+  { time: '1:00 PM – 2:30 PM', title: 'Bug Busters', desc: 'Debugging contest — find and fix errors in code across multiple languages.', icon: 'fas fa-chess-pawn' },
   { time: '1:00 PM', title: 'Lunch Break', desc: 'Networking lunch and refreshments for all participants.', icon: 'fas fa-chess-king' },
-  { time: '2:00 PM', title: 'Sustainable Concept Pitch', desc: 'Pitch innovative sustainable ideas for environmental or societal impact.', icon: 'fas fa-chess-bishop' },
-  { time: '2:30 PM', title: 'Code Clash in Embedded C', desc: 'Write efficient Embedded C programs to solve hardware-oriented challenges.', icon: 'fas fa-chess-knight' },
-  { time: '3:30 PM', title: 'Fun Zone', desc: 'Mini games — Chess Competition, Blind Hit, Push Up Challenge & Win the Doll!', icon: 'fas fa-chess-rook' },
+  { time: '1:00 PM – 2:30 PM', title: 'Sustainable Concept Pitch', desc: 'Pitch innovative sustainable ideas for environmental or societal impact.', icon: 'fas fa-chess-bishop' },
+  { time: '11:00 AM – 12:30 PM', title: 'Code Clash in Embedded C', desc: 'Write efficient Embedded C programs to solve hardware-oriented challenges.', icon: 'fas fa-chess-knight' },
+  { time: '11:00 AM – 3:30 PM', title: 'Fun Zone', desc: 'Mini games — Chess Competition, Blind Hit, Push Up Challenge & Win the Doll!', icon: 'fas fa-chess-rook' },
   { time: '4:30 PM', title: 'Valediction', desc: 'Prize distribution, closing ceremony, and vote of thanks.', icon: 'fas fa-chess-king' },
 ];
 
@@ -330,7 +330,7 @@ const StatCard = ({ icon, target, prefix, suffix, label }) => {
 // ═══════════════════════════════════════════
 // Event Card Component (Horizontal Flip)
 // ═══════════════════════════════════════════
-const CATEGORY_LABELS = { technical: 'Technical', 'non-technical': 'Non-Technical', signature: 'Signature', workshops: 'Workshop' };
+const CATEGORY_LABELS = { technical: 'Technical Event', 'fun-zone': 'Fun Zone' };
 
 const EventCard = ({ event }) => {
   const [flipped, setFlipped] = useState(false);
@@ -589,8 +589,7 @@ const Home = () => {
               {[
                 { label: 'All Events', value: 'all' },
                 { label: 'Technical Events', value: 'technical' },
-                { label: 'Non Technical Events', value: 'non-technical' },
-                { label: 'Signature Events', value: 'signature' },
+                { label: 'Fun Zone', value: 'fun-zone' },
               ].map(f => (
                 <button
                   key={f.value}

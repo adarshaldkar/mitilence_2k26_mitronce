@@ -706,11 +706,12 @@ const Home = () => {
           <AnimatedSection>
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(4, 1fr)',
+              gridTemplateColumns: 'minmax(260px, 360px)',
               gap: '20px',
+              justifyContent: 'center',
               marginTop: '16px',
             }}>
-              {Array.from({ length: 8 }).map((_, i) => (
+              {Array.from({ length: 1 }).map((_, i) => (
                 <div
                   key={i}
                   onClick={() => document.getElementById('poster-lightbox').style.display = 'flex'}
@@ -734,7 +735,7 @@ const Home = () => {
                   }}
                 >
                   <img
-                    src="/Main_poster.jpg"
+                    src="/main_poster.jpg"
                     alt={`MITRONCE 2026 Poster ${i + 1}`}
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   />
@@ -772,7 +773,7 @@ const Home = () => {
           alignItems: 'center', justifyContent: 'center',
         }}
       >
-        <img src="/Main_poster.jpg" alt="MITRONCE 2026 Poster" style={{ maxHeight: '90vh', maxWidth: '90vw', borderRadius: '8px', boxShadow: '0 0 60px rgba(198,161,91,0.3)' }} />
+        <img src="/main_poster.jpg" alt="MITRONCE 2026 Poster" style={{ maxHeight: '90vh', maxWidth: '90vw', borderRadius: '8px', boxShadow: '0 0 60px rgba(198,161,91,0.3)' }} />
         <button onClick={() => document.getElementById('poster-lightbox').style.display = 'none'} style={{
           position: 'absolute', top: 24, right: 32,
           background: 'transparent', border: 'none', color: '#C6A15B',

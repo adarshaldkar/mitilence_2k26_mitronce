@@ -50,6 +50,7 @@ const GoldCursor = () => {
 };
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import MarqueeBanner from './components/MarqueeBanner';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -286,6 +287,7 @@ function App() {
     <AuthProvider>
       <GoldCursor />
       <AppContent />
+      <Analytics />
     </AuthProvider>
   );
 }
